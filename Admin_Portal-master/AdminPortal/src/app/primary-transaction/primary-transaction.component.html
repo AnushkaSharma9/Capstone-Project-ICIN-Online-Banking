@@ -1,0 +1,22 @@
+<h1>Primary Account Transaction List</h1>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+				<th>Transaction Id</th>
+				<th>Account no</th>
+			    <th>Post Date</th>
+                <th>Type</th>
+                <th>Available Balance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let primaryTransaction of primaryTransactionList">
+			<td>{{primaryTransaction.transactionId}}</td>
+			<td>{{primaryTransaction.accNo}}</td>
+			<td>{{primaryTransaction.date | date: 'MM/dd/yyyy'}} </td>
+			<td>{{primaryTransaction.transactionType}}</td>
+			<td>{{primaryTransaction.newBalance}}</td>
+		</tr>
+	</tbody>
+</table>   

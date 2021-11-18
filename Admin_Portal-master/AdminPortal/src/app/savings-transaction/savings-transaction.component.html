@@ -1,0 +1,22 @@
+<h1>Savings Account Transaction List</h1>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			    <th>Transaction Id</th>
+				<th>Account no</th>
+			    <th>Post Date</th>
+                <th>Type</th>
+                <th>Available Balance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let savingsTransaction of savingsTransactionList">
+			<td>{{savingsTransaction.transactionId}}</td>
+			<td>{{savingsTransaction.accNo}}</td>
+			<td>{{savingsTransaction.date | date: 'MM/dd/yyyy'}} </td>
+			<td>{{savingsTransaction.transactionType}}</td>
+			<td>{{savingsTransaction.newBalance}}</td>
+		</tr>
+	</tbody>
+</table>   
