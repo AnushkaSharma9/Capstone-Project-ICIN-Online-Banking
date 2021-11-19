@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo '----------------- This is a build docker image phase ----------'
                 sh '''
-                    docker image build -t icin-bank-webservice "Backend Final/icin_bank_final".
+                    docker image build -t icin-bank-webservice "Backend Final/icin_bank_final" .
                 '''
             }
         }
