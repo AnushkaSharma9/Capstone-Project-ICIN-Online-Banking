@@ -30,11 +30,11 @@ pipeline {
             }
         }
 
-        stage('Docker Build Backend Final/icin_bank_final') {
+        stage('Docker Build') {
             steps {
                 echo '----------------- This is a build docker image phase ----------'
                 sh '''
-                    docker image build -t icin-bank-webservice .
+                    docker image build -t icin-bank-webservice "Backend Final/icin_bank_final".
                 '''
             }
         }
