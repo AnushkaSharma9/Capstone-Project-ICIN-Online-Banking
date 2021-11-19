@@ -26,7 +26,7 @@ pipeline {
         stage('Maven Build') {
              steps {
                 echo '----------------- This is a build phase ----------'
-                sh 'mvn clean package -DskipTests'
+                
             }
         }
 
