@@ -30,7 +30,7 @@ pipeline {
             }
         }
 
-        stage('Docker Build') {
+        stage('Docker Build Backend Final/icin_bank_final') {
             steps {
                 echo '----------------- This is a build docker image phase ----------'
                 sh '''
