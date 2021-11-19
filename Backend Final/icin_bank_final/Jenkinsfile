@@ -12,7 +12,7 @@ pipeline {
         stage('Maven Compile') {
             steps {
                 echo '----------------- This is a compile phase ----------'
-                sh 'mvn clean compile'
+                
             }
         }
         
