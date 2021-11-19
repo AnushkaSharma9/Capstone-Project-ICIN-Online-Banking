@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-COPY ./icin-bank-webservice-0.0.1-SNAPSHOT.jar icin-bank-webservice-0.0.1-SNAPSHOT.jar
+COPY ./target/icin-bank-webservice-0.0.1-SNAPSHOT.jar icin-bank-webservice-0.0.1-SNAPSHOT.jar
 CMD ["java" ,"-jar","icin-bank-webservice-0.0.1-SNAPSHOT.jar"]
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
